@@ -1,0 +1,6 @@
+CSS Hints
+    - User Agent - É o próprio Navegador
+    - border-image-source - Borda personalizada
+    - border-image-slice - Repartir
+    - border-image-repeat
+    - border-image: source slice repeat
