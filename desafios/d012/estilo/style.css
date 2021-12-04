@@ -104,5 +104,9 @@ footer {
     color: white;
     text-align: center;
     padding: 10px;
+    font-family: var(--fonte1);
 }
 
+footer > a {
+    font-family: var(--fonte2);
+}
