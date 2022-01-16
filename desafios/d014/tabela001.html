@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio de Tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .destaque {
+            background-color: gray;
+            color: white;
+            text-align: center;
+        }
+        table {
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 14px;
+        }
+
+        .number {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <thead class="destaque">
+            <tr>
+                <th scope="col" rowspan="2">Área</th>
+                <th scope="col" rowspan="2">Disciplinas</th>
+                <th scope="colgroup" colspan="2">Notas</th>
+                <th scope="col" rowspan="2">Média</th>
+            </tr>
+            <tr>
+                <th scope="col">Nota1</th>
+                <th scope="col">Nota2</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="rowgroup" rowspan="4">Exactas</th>
+                <td>Matemática</td>
+                <td class="number">0.0</td>
+                <td class="number">0.0</td>
+                <td class="number">0.0</td>
+            </tr>
+            <tr>
+                <td>Física</td>
+                <td class="number">0.0</td>
+                <td class="number">0.0</td>
+                <td class="number">0.0</td>
+            </tr>
+            <tr>
+                <td>Química</td>
+                <td class="number">0.0</td>
+                <td class="number">0.0</td>
+                <td class="number">0.0</td>
+            </tr>
+            <tr>
+                <td>Biologia</td>
+                <td class="number">0.0</td>
+                <td class="number">0.0</td>
+                <td class="number">0.0</td>
+            </tr>
+            <th class="destaque" scope="row" colspan="4">Média de Exactas</th>
+            <td class="destaque" class="number">0.0</td>
+            <tr>
+                <th scope="rowgroup" rowspan="2">Humanas</th>
+                <td>História</td>
+                <td class="number">0.0</td>
+                <td class="number">0.0</td>
+                <td class="number">0.0</td>
+            </tr>
+            <tr>
+                <td>Geografia</td>
+                <td class="number">0.0</td>
+                <td class="number">0.0</td>
+                <td class="number">0.0</td>
+            </tr>
+        </tbody>
+        <tfoot class="destaque">
+            <tr>
+                <th scope="row" colspan="4">Média de Humanas</th>
+                <td class="number">0.0</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
