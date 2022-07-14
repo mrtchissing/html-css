@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>iframes</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+</head>
+<body>
+    <form action="cadastro.php" method="get">
+        <h1>Meu site principal</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur molestias ex veniam tempora dolorum, sit reprehenderit aspernatur tenetur ab architecto eos vero quas officiis, aliquam adipisci culpa aperiam, doloremque sequi!
+        </p>
+        <!--Usar sandbox pra proteger o site, de ataques vindos do iframe-->
+        <iframe src="pag-extras/iframe004.html" sandbox="sandbox" referrerpolicy="no-referrer">
+            Seu navegador não é compatível
+        </iframe>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum maiores labore tenetur officiis ea ducimus! Aperiam, natus molestias. Fugit repudiandae non expedita eos! Eaque distinctio expedita fuga, facilis iusto aut!</p>
+    </form>
+</body>
+</html>
