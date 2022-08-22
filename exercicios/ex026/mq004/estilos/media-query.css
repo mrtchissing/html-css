@@ -1,1 +1,80 @@
 @charset "UTF-8";
+
+/*Outras midias*/
+
+/*Typical Device Breakpoints
+----------------------------
+
+Pequenas telas: ? > 600px
+Phone: 600px -> 768px
+Tablet: 768px -> 992px
+Desktop: 992px -> 1200px
+Grandes telas: 1200px < ?
+*/
+
+@media print {
+    * {
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    main {
+        width: 90vw;
+        border: 2px solid black;
+    }
+
+    main::after {
+        content: "Essa impressão foi feita por Mr Tchissing";
+        text-align: center;
+        text-decoration: overline;
+    }
+
+    main h1{
+        text-shadow: none;
+        color: black;
+    }
+    #phone {display: none;}
+    #tablet {display: none;}
+    #print {display: block;}
+    #pc {display: none;}
+    #tv {display: none;}
+    
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    /*TABLET*/
+    body {
+        background-image: url(../img/back-tablet.jpg);
+    }
+    
+    #phone {display: none;}
+    #tablet {display: block;}
+    #print {display: none;}
+    #pc {display: none;}
+    #tv {display: none;}
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    /*DESKTOP*/
+    body {
+        background-image: url(../img/back-pc.jpg);
+    }
+    
+    #phone {display: none;}
+    #tablet {display: none;}
+    #print {display: none;}
+    #pc {display: block;}
+    #tv {display: none;}
+}
+
+@media screen and (min-width: 1200px) {
+    /*GRANDES TELAS*/
+    body {
+        background-image: url(../img/back-tv.jpg);
+    }
+    
+    #phone {display: none;}
+    #tablet {display: none;}
+    #print {display: none;}
+    #pc {display: none;}
+    #tv {display: block;}
+}
